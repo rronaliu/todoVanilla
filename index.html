@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <script src="https://kit.fontawesome.com/86ce4abe90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mt-4">
+<div class="container text-center">
+    <h1 class="text-white font-weight-light" id="temperature"></h1>
+    <h2 class="text-white font-weight-light" id="description"></h2>
+    <p class="text-white font-weight-light" id="location"></p>
+</div>   
+
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4 font-weight-normal">To-do List</h1>
+            <form class="search" autocomplete="off">
+                <input type="text" class="form-control m-auto" name="search" placeholder="search to-dos">
+            </form>
+            
+        </header>
+        <ul class="list-group todos mx-auto text-light todo-items" id="emptyList">
+
+        </ul>
+
+        <a href = "javascript:document.getElementById('addTodo').focus()" class="add-button list-group-item text-center align-items-center plus text-decoration-none text-white">
+            +
+        </a>
+
+        <form class="add todo-form text-center my-4" autocomplete="off">
+            <input class="form-control todo-input m-auto  " id="addTodo" type="text" name="add"/>
+        </form>
+
+    </div>
+</div>
+    <script src="apptodo.js"></script>
+    <script src="forecastApi.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background: #352f5b;
+}
+
+.container{
+    max-width: 400px;
+}
+
+input[type=text],
+input[type=text]:focus{
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+}
+
+.todos li {
+    background: #423a6f;
+}
+
+.delete {
+    cursor: pointer;
+}
+
+.filtered {
+    display: none !important;
+}
+
+.plus {
+    background-color: #423a6f;
+    background-position: center;
+    transition: background 0.8s;
+    font-size: 40px;
+    padding: 0;
+    color: #eee;
+  }
+
+.plus:hover {
+    /* background: #423a6f radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%; */
+    background: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.plus:active {
+    background-color: #423a6f;
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+  ul {
+    list-style-type: none; /* get rid of bullet points on side of list items */
+  }
+
+  .delete {
+    pointer-events:none;
+  }
